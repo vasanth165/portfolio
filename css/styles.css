@@ -1,0 +1,199 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #121212;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    flex: 1;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333 !important;
+}
+.navbar-brand, .nav-link {
+    color: #FFD700 !important;
+    font-family: 'Roboto', sans-serif;
+}
+.bg-image {
+    background-image: url('../images/back.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.home-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    z-index: 1;
+    width: 80%; /* Adjust width as needed */
+}
+.home-text h1 {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.home-text .typing-text {
+    color: #FFFFFF; /* White color for "I am a" */
+}
+.home-text .animated-text {
+    color: #FFD700; /* Yellow color for animated text */
+    animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+}
+.btn-hire-me, .btn-download, .btn-send {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px; /* Space above button */
+    color: #FFFFFF; /* White text color */
+    background-color: #FFD700; /* Yellow color for button */
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-hire-me:hover, .btn-download:hover, .btn-send:hover {
+    background-color: #FFA500; /* Darken button color on hover */
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+.section-content {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 40px 0;
+}
+.contact-section {
+    padding: 80px 0;
+    background-color: #1f1f1f;
+    color: white;
+}
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFD700;
+}
+.contact-info {
+    margin-bottom: 40px;
+}
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.contact-info p i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+.contact-form .form-label {
+    font-size: 1.2em;
+    color: #FFD700;
+}
+.contact-form .form-control {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.contact-form .form-control:focus {
+    background-color: #555;
+    color: white;
+}
+.contact-form .btn-send {
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+.contact-form .btn-send:hover {
+    background-color: #FFA500;
+}
+.footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.social-links {
+    margin-top: 20px;
+}
+.social-links a {
+    color: #FFD700; /* Yellow color for social media icons */
+    font-size: 1.5em;
+    margin: 0 10px;
+}
+.social-links a:hover {
+    color: #FFA500; /* Darken icon color on hover */
+}
+.skills {
+    padding: 50px 0;
+}
+.skills h2 {
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 40px;
+    color: #FFD700;
+    text-align: center;
+}
+.card {
+    background-color: #1e1e1e;
+    border: none;
+    margin-bottom: 20px;
+    color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card .card-body {
+    display: flex;
+    align-items: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+.card .card-body i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #ffcc00; /* Yellow theme color */
+}
+.card .card-body p {
+    margin: 0;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
